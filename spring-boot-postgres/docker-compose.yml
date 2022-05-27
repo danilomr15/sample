@@ -2,6 +2,7 @@ version: '3.1'
 services:
   app:
     image: spring-boot-postgres
+    build: .
     ports:
       - "8080:8080"
     depends_on:
