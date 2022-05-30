@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "5187a5bb-7417-4b9d-b050-7959d43e987f",
+		"name": "Spring boot mongodb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9219554"
+	},
+	"item": [
+		{
+			"name": "Users - Find All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users - Find by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/users/6294b8fd213c3a0a221559e2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"6294b8fd213c3a0a221559e2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users - Find by username",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/users/2/username",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"2",
+						"username"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users - Create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"danilomr\",\n    \"password\" : \"batatinha123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users - Update user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"danilomr\",\n    \"password\" : \"batataum\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/users/6294b8fd213c3a0a221559e2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"6294b8fd213c3a0a221559e2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users - Delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/users/6294b8fd213c3a0a221559e2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"6294b8fd213c3a0a221559e2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
