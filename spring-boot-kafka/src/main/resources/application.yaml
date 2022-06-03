@@ -1,0 +1,6 @@
+kafka:
+  bootstrap-server: http://kafka:29092
+  group-id-1: my-group-1
+  topic-name-1: my-topic-1
+  group-id-2: my-group-2
+  topic-name-2: my-topic-2
