@@ -1,0 +1,13 @@
+spring:
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    virtual-host: spring_host
+    username: danilomr
+    password: pass123
+
+rabbitmq:
+  queue-name: spring_queue
+  exchange-name: spring_exchange
+  routing-key-name: spring_routing_key
+
